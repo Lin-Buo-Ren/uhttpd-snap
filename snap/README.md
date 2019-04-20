@@ -7,9 +7,7 @@
 
 **This is the unofficial snap for uhttpd**, *"A laughably-small HTTP server"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
-<!-- Uncomment and modify this when you are provided a build status badge
 [![Build Status Badge of the `uhttpd` Snap](https://build.snapcraft.io/badge/Lin-Buo-Ren/uhttpd-snap.svg "Build Status of the `uhttpd` snap")](https://build.snapcraft.io/user/Lin-Buo-Ren/uhttpd-snap)
--->
 
 <!-- Uncomment and modify this when you have a screenshot
 ![Screenshot of the Snapped Application](local/screenshots/screenshot.png "Screenshot of the Snapped Application")
