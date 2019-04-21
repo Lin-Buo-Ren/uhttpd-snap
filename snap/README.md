@@ -20,8 +20,7 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 
 ### In a Terminal
     # Install the snap #
-    sudo snap install --channel=edge uhttpd
-    #sudo snap install --channel=beta uhttpd
+    sudo snap install --channel=beta uhttpd
     #sudo snap install uhttpd
     
     # Launch the application #
