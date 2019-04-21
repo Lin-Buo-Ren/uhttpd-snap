@@ -9,7 +9,20 @@ set \
     -o nounset \
     -o pipefail
 
-#export IMPORTANT_ENVIRONMENT_VARIABLE=value
+declare \
+    document_root_dir \
+    document_root_dir_default \
+    listening_port \
+    listening_part_default=80
+#     enable_access_log \
+#     enable_access_log_default=false
 
-# Finally run the next part of the command chain
-exec "${@}"
+document_root_dir="$(snapctl get document-root-dir)"
+document_root_dir_default="${SNAP_COMMON}"
+listening_port="$(snapctl get listening-port)"
+#enable_access_log="$(snapctl get enable-access-log)"
+
+"${SNAP}"/bin/uhttpd \
+    -addr=":${listening_port:-${listening_part_default}}" \
+    -dir="${document_root_dir:-${document_root_dir_default}}"
+#    -log="${enable_access_log:-${enable_access_log_default}}"
