@@ -41,6 +41,9 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 ### Customize the serving directory(Default: /var/snap/uhttpd/common) (EXPERIMENTAL, likely won't work)
     sudo snap set uhttpd document-root-dir=/media/USB
 
+### Toggle output of access logging(Default: false)
+    sudo snap set uhttpd enable-access-log=true
+
 ## What is Working
 * Launch
 * Serve static content
