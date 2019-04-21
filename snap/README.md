@@ -35,6 +35,10 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/uhttpd)
 
 ## Configuration
+The snap service must be restarted manually for the following configurations to take effect:
+
+    sudo snap restart uhttpd
+
 ### Customize the listening port(Default: 80)
     sudo snap set uhttpd listening-port=8080
 
