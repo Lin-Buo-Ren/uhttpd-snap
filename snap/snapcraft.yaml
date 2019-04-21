@@ -153,6 +153,9 @@ apps:
     - bin/uhttpd-launch
 
     daemon: simple
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
 
 # Refer the following documentation for asserting interface plugs and slots in a security confined snap:
 # Interface management - doc - snapcraft.io
