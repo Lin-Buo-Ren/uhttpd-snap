@@ -25,6 +25,8 @@ init(){
                 >&2
             exit 1
         fi
+    else
+        snapctl set document-root-dir="${SNAP_COMMON}"
     fi
 
     if test -n "${listening_port}"; then
@@ -38,6 +40,8 @@ init(){
                 >&2
             exit 1
         fi
+    else
+        snapctl set listening-port=80
     fi
 
     if test -n "${enable_access_log}"; then
@@ -50,6 +54,8 @@ init(){
                 >&2
             exit 1
         fi
+    else
+        snapctl set enable-access-log=false
     fi
     exit 0
 }
