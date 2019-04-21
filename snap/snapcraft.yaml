@@ -24,7 +24,18 @@ description: |
   [1]: https://wiki.openwrt.org/doc/howto/http.uhttpd
 
   **Snap-specific Information**
-  In this build the server's document root directory is set at $SNAP_COMMON(/var/snap/uhttpd/common) and is currently not configurable.
+
+  Customize the listening port(Default: 80):
+
+      sudo snap set uhttpd listening-port=8080
+
+  Customize the serving directory(Default: /var/snap/uhttpd/common) (EXPERIMENTAL, likely won't work):
+
+      sudo snap set uhttpd document-root-dir=/media/USB
+
+  Toggle output of access logging(Default: false):
+
+      sudo snap set uhttpd enable-access-log=true
 
   This is not an official distribution of uhttpd, for any problem regarding using of this snap please refer this issue tracker:
 
