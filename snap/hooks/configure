@@ -11,12 +11,12 @@ set \
 init(){
     local \
         document_root_dir \
-        listening_port
-        #enable_access_log
+        listening_port \
+        enable_access_log
 
     document_root_dir="$(snapctl get document-root-dir)"
     listening_port="$(snapctl get listening-port)"
-#     enable_access_log="$(snapctl get enable-access-log)"
+    enable_access_log="$(snapctl get enable-access-log)"
 
     if test -n "${document_root_dir}"; then
         if ! ls "${document_root_dir}" >/dev/null; then
@@ -40,17 +40,17 @@ init(){
         fi
     fi
 
-#     if test -n "${enable_access_log}"; then
-#         if test "${enable_access_log}" != false \
-#             && test "${enable_access_log}" != true; then
-#             # Markdown <code> backticks are not bash command expansions
-#             # shellcheck disable=SC2016
-#             printf -- \
-#                 'configure: Error: enable-access-log must be `true` or `false`.\n' \
-#                 >&2
-#             exit 1
-#         fi
-#     fi
+    if test -n "${enable_access_log}"; then
+        if test "${enable_access_log}" != false \
+            && test "${enable_access_log}" != true; then
+            # Markdown <code> backticks are not bash command expansions
+            # shellcheck disable=SC2016
+            printf -- \
+                'configure: Error: enable-access-log must be `true` or `false`.\n' \
+                >&2
+            exit 1
+        fi
+    fi
     exit 0
 }
 
