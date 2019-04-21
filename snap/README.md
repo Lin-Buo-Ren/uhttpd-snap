@@ -35,6 +35,13 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 ### The Graphical Way
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/uhttpd)
 
+## Configuration
+### Customize the listening port(Default: 80)
+    sudo snap set uhttpd listening-port=8080
+
+### Customize the serving directory(Default: /var/snap/uhttpd/common) (EXPERIMENTAL, likely won't work)
+    sudo snap set uhttpd document-root-dir=/media/USB
+
 ## What is Working
 * Launch
 * Serve static content
