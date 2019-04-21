@@ -26,6 +26,11 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
     # Launch the application #
     snap start uhttpd
 
+    # Put some files to the document root directory #
+    sudo sh -c 'printf "<h1>Hello uhttpd snap</h1>\n" > /var/snap/uhttpd/common/index.html'
+    
+    # Profit #
+    xdg-open http://localhost:80
 
 ### The Graphical Way
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/uhttpd)
