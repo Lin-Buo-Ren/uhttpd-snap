@@ -3,6 +3,10 @@ This is the unofficial snap packaging for uhttpd, [Snaps are universal Linux pac
 
 Refer [snap/README.md](snap/README.md) for user-oriented information.
 
+## Deprecation Notice
+
+As the packaging [is now contributed to the upstream](https://github.com/nesv/uhttpd/tree/master/snap), this project is no longer in active maintenance and is only serving for reference purposes, please refer to [the upstream project](https://github.com/nesv/uhttpd) for issues regarding the use of the `uhttpd` snap.
+
 ## Remaining Tasks
 Snapcrafters ([join us](https://forum.snapcraft.io/t/join-snapcrafters/1325)) are working to land snap install documentation and the [snapcraft.yaml](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/blob/master/snap/snapcraft.yaml) upstream so uhttpd can authoritatively publish future releases.
 
